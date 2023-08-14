@@ -1,0 +1,29 @@
+<!--
+What if the synchronous function takes a long time?
+
+The program below uses a very inefficient algorithm to generate 
+multiple large prime numbers when a user clicks the "Generate primes" button. 
+The higher the number of primes a user specifies, the longer the operation will take
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Long-term</title>
+</head>
+<body>
+    <label for="quota">Number of primes:</label>
+<input type="text" id="quota" name="quota" value="1000000" />
+
+<button id="generate">Generate primes</button>
+<button id="reload">Reload</button>
+
+<div id="output"></div>
+
+
+<script  defer src="prime.js"></script>
+</body>
+</html>
